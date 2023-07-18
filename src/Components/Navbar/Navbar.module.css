@@ -1,0 +1,33 @@
+.navbar {
+    width: 100%;
+    display: flex;
+    background-color: black;
+    justify-content: space-between;
+    padding: 1rem 2rem;
+}
+.navbar_logo img{
+    width: 150px;
+}
+
+.navbar_logo {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+.navbar_links {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    list-style: none;
+}
+
+.navbar_links li{
+    margin: 0 1rem;
+    cursor: pointer;
+}
+
+.navbar_links li:hover{
+    color: var(--color-grey);
+}
