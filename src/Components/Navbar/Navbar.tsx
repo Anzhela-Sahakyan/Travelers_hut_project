@@ -4,7 +4,8 @@ import images from "../../Data/images.js"
 import MenuIcon from '@mui/icons-material/Menu';
 import RestaurantMenuTwoToneIcon from '@mui/icons-material/RestaurantMenuTwoTone';
 import { useState } from "react";
-import navbarItems from "./navbarItems";
+// import navbarItems from "./navbarItems";
+import RenderNavbarItems from "./RenderNavbarItems";
 
 
 
@@ -17,9 +18,7 @@ export default function  Navbar() {
         <img src={images.logo} alt="logo"/>
         </div>
         <ul className={`${styles.navbar_links} p__opensans`}>
-            {navbarItems.map(({label, link}) => (
-                <li className="p__opensans"> <a href={link}>{label}</a></li>
-            ))}
+          <RenderNavbarItems/>
         </ul>
 
         <div className={styles.navbar_book_table}>
@@ -32,14 +31,7 @@ export default function  Navbar() {
             <div className={`${styles.navbar_smallscreen_overlay} `}>
                 <RestaurantMenuTwoToneIcon className={styles.navbar_smallscreen_overlay_icon} onClick={()=> setToggleMenu(false)}/>
             <ul className={`${styles.navbar_smallscreen_links} p__opensans`}>
-
-             {
-                navbarItems.map(({label, link}) => (
-                    <li className="p__opensans"> 
-                        <a href="link">{label}</a>
-                    </li>
-                        ))
-                    }
+                <RenderNavbarItems/>
                 </ul>
             </div>
             )}
