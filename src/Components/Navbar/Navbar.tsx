@@ -1,24 +1,49 @@
 import styles from "./Navbar.module.css"
+import "../../../src/App.css"
 import images from "../../Data/images.js"
+import MenuIcon from '@mui/icons-material/Menu';
+import RestaurantMenuTwoToneIcon from '@mui/icons-material/RestaurantMenuTwoTone';
+import { useState } from "react";
+import navbarItems from "./navbarItems";
+
+
 
 export default function  Navbar() {
+
+    const [toggleMenu, setToggleMenu] = useState(false)
+
     return <div className= {styles.navbar}>
         <div className={styles.navbar_logo}> 
         <img src={images.logo} alt="logo"/>
         </div>
-        <ul className={`${styles.navbar_links} ${styles.p__opensans}`}>
-            <li className="p__opensans"> 
-            <a href="#home">Home</a> </li>
-            <li className="p__opensans"> 
-            <a href="#about">About</a> </li>
-            <li className="p__opensans"> 
-            <a href="#menu">Menu</a> </li>
-            <li className="p__opensans"> 
-            <a href="#Contact">Contact</a> </li>
+        <ul className={`${styles.navbar_links} p__opensans`}>
+            {navbarItems.map(({label, link}) => (
+                <li className="p__opensans"> <a href={link}>{label}</a></li>
+            ))}
         </ul>
 
-        <div className={styles.navbar_login}>
-            <a href="#login" className="p__opensans">Book Table</a>
+        <div className={styles.navbar_book_table}>
+            <a href="#booktable" className="p__opensans">Book Table</a>
+        </div>
+        <div className={styles.navbar_smallscreen}>
+            <MenuIcon className={styles.navbar_smallscreen_menu_icon} onClick = {() => setToggleMenu(true)}/>
+
+            {toggleMenu && (
+            <div className={`${styles.navbar_smallscreen_overlay} `}>
+                <RestaurantMenuTwoToneIcon className={styles.navbar_smallscreen_overlay_icon} onClick={()=> setToggleMenu(false)}/>
+            <ul className={`${styles.navbar_smallscreen_links} p__opensans`}>
+
+             {
+                navbarItems.map(({label, link}) => (
+                    <li className="p__opensans"> 
+                        <a href="link">{label}</a>
+                    </li>
+                        ))
+                    }
+                </ul>
+            </div>
+            )}
+            
         </div>
     </div>
 } 
