@@ -1,0 +1,30 @@
+.menu_title_subtitle {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.menu_menu {
+  margin: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+}
+
+.menu_menu button {
+  margin: 1.5rem;
+}
+
+.menu_menu_icon_wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: aliceblue;
+}
+
+.menu_menu_icon {
+  font-size: 2rem;
+  margin: 1rem;
+}
