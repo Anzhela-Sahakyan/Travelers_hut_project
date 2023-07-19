@@ -10,7 +10,7 @@ export default function Home() {
       id="Home"
     >
       <div className={`app__wrapper_info ${styles.home_wrapper}`}>
-        <Subheading title="Eat healthy, be happy." />
+        <Subheading title="Eat healthy, be happy" />
         <h1 className={styles.home_header_h1}>
           Where every dish tells a story
         </h1>
