@@ -17,14 +17,43 @@
   margin: 1.5rem;
 }
 
+.menu_menu button:hover {
+  background-color: var(--color-beige);
+}
+
 .menu_menu_icon_wrapper {
   display: flex;
   justify-content: center;
   align-items: center;
-  color: aliceblue;
+  color: var(--color-gray);
 }
 
 .menu_menu_icon {
   font-size: 2rem;
   margin: 1rem;
+}
+
+@media screen and (min-width: 2000px) {
+  .menu_menu button {
+    margin: 3rem;
+    width: 30rem;
+    height: 5rem;
+    font-size: 80px;
+  }
+}
+
+@media screen and (max-width: 1150px) {
+  .menu_menu button {
+    margin: 0.2rem;
+  }
+}
+
+@media screen and (max-width: 650px) {
+  .menu_menu {
+    flex-direction: column;
+  }
+
+  .menu_menu button {
+    margin: 1.5rem;
+  }
 }
