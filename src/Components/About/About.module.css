@@ -1,0 +1,41 @@
+.about {
+  background-color: black;
+  position: relative;
+}
+
+.about_content {
+  width: 100%;
+}
+
+.about_content_about {
+  flex: 1;
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+  flex-direction: column;
+  text-align: right;
+}
+
+.about_content_utensils {
+  margin: 2rem 4rem;
+}
+
+.about_content_utensils img {
+  height: 850px;
+}
+
+.about_content_history {
+  flex: 1;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  flex-direction: column;
+  text-align: left;
+}
+
+.about_content_about p,
+.about_content_history p {
+  margin: 2rem 0;
+  color: var(grey);
+  text-transform: none;
+}
