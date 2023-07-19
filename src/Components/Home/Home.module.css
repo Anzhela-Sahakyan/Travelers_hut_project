@@ -1,3 +1,7 @@
+.home_header {
+  background-color: black;
+}
+
 .home_header_h1 {
   font-family: var(--font-base);
   color: var(--color-golden);

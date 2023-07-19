@@ -1,16 +1,29 @@
 @import url("https://fonts.googleapis.com/css2?family=Cormorant+Upright:wght@300;400;500;600;700&family=Open+Sans:wght@300;400;500;600;700&display=swap");
 
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
+
 :root {
   --font-base: "Cormorant Upright", serif;
   --font-alt: "Open Sans", sans-serif;
 
   --color-golden: #dcca87;
-  --color-black: #000000;
+  --color-black: #0c0c0c;
   --color-gray: #545454;
   --color-beige: #e4d0c2;
   --color-grey: #aaaaaa;
   --color-white: #ffffff;
-  --color-yellow: #d4b850;
 }
 
 * {
@@ -18,7 +31,6 @@
   padding: 0;
   margin: 0;
   scroll-behavior: smooth;
-  background-color: var(--color-black);
 }
 
 a {

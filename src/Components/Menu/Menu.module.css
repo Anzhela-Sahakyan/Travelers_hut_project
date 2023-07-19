@@ -17,15 +17,11 @@
   margin: 1.5rem;
 }
 
-.menu_menu button:hover {
-  background-color: var(--color-beige);
-}
-
 .menu_menu_icon_wrapper {
   display: flex;
   justify-content: center;
   align-items: center;
-  color: var(--color-gray);
+  color: aliceblue;
 }
 
 .menu_menu_icon {
