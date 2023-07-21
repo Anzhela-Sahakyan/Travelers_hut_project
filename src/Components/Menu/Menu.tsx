@@ -1,4 +1,3 @@
-import { colors } from "@mui/material";
 import "../../../src/App.css";
 import Subheading from "../Subheading/Subheading";
 import styles from "./Menu.module.css";
