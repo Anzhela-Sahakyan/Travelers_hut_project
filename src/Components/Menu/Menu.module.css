@@ -33,6 +33,10 @@
   margin: 1rem;
 }
 
+.menu_items {
+  color: aliceblue;
+}
+
 @media screen and (min-width: 2000px) {
   .menu_menu button {
     margin: 3rem;

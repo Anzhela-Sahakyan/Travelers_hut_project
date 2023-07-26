@@ -1,4 +1,4 @@
-const Salads = [
+export default [
   {
     name: "Tabbouleh",
     price: "1000 AMD",
@@ -100,5 +100,3 @@ const Salads = [
     ],
   },
 ];
-
-export default Salads;
