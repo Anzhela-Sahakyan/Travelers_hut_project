@@ -17,11 +17,11 @@ export default function Navbar() {
       </div>
       <ul className={`${styles.navbar_links} p__opensans`}>{navbar}</ul>
 
-      <div className={styles.navbar_book_table}>
+      {/* <div className={styles.navbar_book_table}>
         <a href="#booktable" className="p__opensans">
-          Book Table
+          Order Online
         </a>
-      </div>
+      </div> */}
       <div className={styles.navbar_smallscreen}>
         <MenuIcon
           className={styles.navbar_smallscreen_menu_icon}
