@@ -47,6 +47,10 @@
   flex-basis: 25%;
 }
 
+.renderMenuItems_items div:hover {
+  scale: 1.05;
+}
+
 .menu_listItems {
   list-style: none;
   margin: 0;
