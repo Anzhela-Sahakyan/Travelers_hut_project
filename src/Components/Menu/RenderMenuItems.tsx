@@ -5,6 +5,8 @@ import Pizzas from "../../Data/Menu/Pizzas";
 import Sweets from "../../Data/Menu/Sweets";
 import { MenuCategory } from "../../types/menu.types";
 
+import styles from "./Menu.module.css";
+
 export default function RenderMenuItems({ type }: { type: MenuCategory }) {
   const getMenuItems = () => {
     switch (Number(type)) {
@@ -26,12 +28,13 @@ export default function RenderMenuItems({ type }: { type: MenuCategory }) {
   const menuItems = getMenuItems();
 
   return (
-    <div>
+    <div className={styles.renderMenuItems_items}>
       {menuItems.map((item) => (
         <div key={item.name}>
-          <ul>
+          <ul className={styles.menu_listItems}>
             <li>{item.name}</li>
             <li>{item.price}</li>
+            <li>Ingredients:</li>
             <li>
               {item.ingredients.map((ingredient) => (
                 <div key={ingredient}>{ingredient}</div>
