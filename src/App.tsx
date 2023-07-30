@@ -4,6 +4,7 @@ import Navbar from "./Components/Navbar/Navbar";
 import Home from "./Components/Home/Home";
 import About from "./Components/About/About";
 import Menu from "./Components/Menu/Menu";
+import Video from "./Components/Video/Video";
 
 function App() {
   return (
@@ -12,6 +13,7 @@ function App() {
       <Home />
       <About />
       <Menu />
+      <Video />
     </div>
   );
 }
