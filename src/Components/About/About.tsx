@@ -33,13 +33,13 @@ export default function About() {
         <div className={styles.about_content_history}>
           <h1 className="headtext__cormorant">Our History</h1>
           <p className="p__opensans">
-            Our History Founded by Lyova Hovakimyan, Travelers Hut is a
-            family-run restaurant, born from a passion for culinary excellence.
-            With a warm and inviting atmosphere, we offer a diverse menu
-            featuring burgers, pizzas, salads, corn, lunchboxes, sweets, and
-            unique coffees and teas, ensuring every visit is a delightful and
-            memorable experience. Join us on our storied journey and savor the
-            flavors of our extraordinary heritage.
+            Founded by Lyova Hovakimyan, Travelers Hut is a family-run
+            restaurant, born from a passion for culinary excellence. With a warm
+            and inviting atmosphere, we offer a diverse menu featuring burgers,
+            pizzas, salads, corn, lunchboxes, sweets, and unique coffees and
+            teas, ensuring every visit is a delightful and memorable experience.
+            Join us on our storied journey and savor the flavors of our
+            extraordinary heritage.
           </p>
           <button type="button" className="custom__button">
             Know More
