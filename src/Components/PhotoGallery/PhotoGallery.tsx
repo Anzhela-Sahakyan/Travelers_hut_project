@@ -1,3 +1,3 @@
-export default function PhotoGallery () {
-    return
+export default function PhotoGallery() {
+  return;
 }
