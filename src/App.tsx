@@ -5,6 +5,7 @@ import Home from "./Components/Home/Home";
 import About from "./Components/About/About";
 import Menu from "./Components/Menu/Menu";
 import Video from "./Components/Video/Video";
+import PhotoGallery from "./Components/PhotoGallery/PhotoGallery";
 
 function App() {
   return (
@@ -14,6 +15,7 @@ function App() {
       <About />
       <Menu />
       <Video />
+      <PhotoGallery />
     </div>
   );
 }
