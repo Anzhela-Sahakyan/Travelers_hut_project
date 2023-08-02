@@ -7,7 +7,7 @@ import "../../../src/App.css";
 
 export default function () {
   return (
-    <div className={styles.footer}>
+    <div className={styles.footer} id="Contact">
       <div className={styles.footer_links}>
         <div className={styles.footer_links_contact}>
           <h1 className={styles.footer_headtext}>Contact us</h1>
