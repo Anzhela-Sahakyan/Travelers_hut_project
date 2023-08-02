@@ -55,7 +55,7 @@
 
 .footer_headtext {
   font-family: var(--font-base);
-  color: var(--color-white);
+  color: var(--color-golden);
   font-weight: 400;
   letter-spacing: 0.04rem;
   text-transform: capitalize;
