@@ -1,0 +1,137 @@
+.menu_title_subtitle {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.menu_menu {
+  margin: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+}
+
+.menu_menu button {
+  margin: 1.5rem;
+}
+
+.menu_menu button:hover {
+  background-color: var(--color-beige);
+}
+
+.menu_menu_icon_wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: var(--color-gray);
+}
+
+.menu_menu_icon {
+  font-size: 2rem;
+  margin: 1rem;
+}
+
+.renderMenuItems_items {
+  color: var(--color-white);
+  font-family: var(--font-menu);
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  letter-spacing: 0.04em;
+  gap: 25px;
+}
+
+.renderMenuItems_items div {
+  flex-basis: 25%;
+}
+
+.renderMenuItems_items div:hover {
+  scale: 1.05;
+}
+
+.menu_listItems {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  border: 1px solid var(--color-beige);
+  border-radius: 5px;
+  min-height: 350px;
+  min-width: 150px;
+}
+
+.menu_listItems li {
+  padding: 10px;
+  text-align: center;
+}
+
+.menu_listItems li:first-child {
+  margin-top: 0.8rem;
+  font-weight: bold;
+  font-size: 25px;
+}
+
+.menu_listItems li:nth-child(2) {
+  margin-top: 1.5rem;
+  color: var(--color-golden);
+  font-size: 20px;
+}
+
+.menu_listItems li:last-child {
+  font-style: italic;
+}
+
+.menu_listItems li:nth-child(3) {
+  margin-top: 1.5em;
+}
+
+.menu_listItems li:last-child div,
+.menu_listItems li:nth-child(3) {
+  color: var(--color-light_grey);
+}
+
+@media screen and (min-width: 2000px) {
+  .menu_menu button {
+    margin: 3rem;
+    width: 30rem;
+    height: 5rem;
+    font-size: 80px;
+  }
+  .menu_listItems li:first-child {
+    font-size: 40px;
+  }
+  .menu_listItems li:nth-child(2) {
+    font-size: 30px;
+  }
+
+  .menu_listItems li:last-child div,
+  .menu_listItems li:nth-child(3) {
+    font-size: 30px;
+  }
+
+  .menu_listItems {
+    min-width: 250px;
+    min-height: 500px;
+    border: 2px solid var(--color-beige);
+  }
+  .renderMenuItems_items {
+    gap: 50px;
+  }
+}
+
+@media screen and (max-width: 1150px) {
+  .menu_menu button {
+    margin: 0.2rem;
+  }
+}
+
+@media screen and (max-width: 650px) {
+  .menu_menu {
+    flex-direction: column;
+  }
+
+  .menu_menu button {
+    margin: 1.5rem;
+  }
+}
