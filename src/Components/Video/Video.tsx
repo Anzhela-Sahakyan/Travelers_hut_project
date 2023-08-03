@@ -24,6 +24,9 @@ export default function Video() {
 
   return (
     <div className={styles.video_wrapper}>
+      <div className={styles.video_header}>
+        <p className="headtext__cormorant">Brick Oven Magic</p>
+      </div>
       <video
         className={styles.video}
         src={brickovenvideo.brickovenvideo}
