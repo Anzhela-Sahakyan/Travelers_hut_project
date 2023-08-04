@@ -4,11 +4,14 @@ import images from "../../Data/images.js";
 import MenuIcon from "@mui/icons-material/Menu";
 import RestaurantMenuTwoToneIcon from "@mui/icons-material/RestaurantMenuTwoTone";
 import { useState } from "react";
+import useEscapeKey from "../../helpers/useEscapeKey";
 import RenderNavbarItems from "./RenderNavbarItems";
 
 export default function Navbar() {
   const [toggleMenu, setToggleMenu] = useState(false);
-  const navbar = <RenderNavbarItems />;
+  const navbar = <RenderNavbarItems onCloseMenu={() => setToggleMenu(false)} />;
+
+  const closeWithEscKey = useEscapeKey(() => setToggleMenu(false));
 
   return (
     <div className={styles.navbar}>
@@ -17,11 +20,6 @@ export default function Navbar() {
       </div>
       <ul className={`${styles.navbar_links} p__opensans`}>{navbar}</ul>
 
-      {/* <div className={styles.navbar_book_table}>
-        <a href="#booktable" className="p__opensans">
-          Order Online
-        </a>
-      </div> */}
       <div className={styles.navbar_smallscreen}>
         <MenuIcon
           className={styles.navbar_smallscreen_menu_icon}
@@ -33,6 +31,8 @@ export default function Navbar() {
             <RestaurantMenuTwoToneIcon
               className={styles.navbar_smallscreen_overlay_icon}
               onClick={() => setToggleMenu(false)}
+              onKeyDown={(event) => closeWithEscKey}
+              tabIndex={0}
             />
             <ul className={`${styles.navbar_smallscreen_links} p__opensans`}>
               {navbar}
