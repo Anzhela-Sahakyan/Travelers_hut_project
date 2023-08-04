@@ -23,10 +23,11 @@ export default function Video() {
   };
 
   return (
-    <div className={styles.video_wrapper}>
+    <div>
       <div className={styles.video_header}>
-        <p className="headtext__cormorant">Brick Oven Magic</p>
+        <p className="headtext__cormorant">Brick Oven Magic...</p>
       </div>
+    <div className={styles.video_wrapper}>
       <video
         className={styles.video}
         src={brickovenvideo.brickovenvideo}
@@ -47,6 +48,7 @@ export default function Video() {
           )}
         </div>
       </div>
+    </div>
     </div>
   );
 }
