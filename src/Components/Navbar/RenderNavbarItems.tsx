@@ -1,3 +1,4 @@
+import OrderOnline from "./OrderOnline/OrderOnline";
 import navbarItems from "./navbarItems";
 export interface RenderNavbarItemsProps {
   onCloseMenu: () => void;
@@ -18,6 +19,9 @@ export default function RenderNavbarItems({
           </a>
         </li>
       ))}
+      <div>
+      <OrderOnline/>
+      </div>
     </>
   );
 }

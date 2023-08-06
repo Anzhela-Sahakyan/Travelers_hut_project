@@ -25,11 +25,11 @@ const navbarItems: Array<NavbarItem> = [
     link: "#Contact",
     // onclick,
   },
-  {
-    label: "Order Online",
-    link: "#OrderOnline",
-    // onclick,
-  },
+  // {
+  //   label: "Order Online",
+  //   link: "#OrderOnline",
+  //   // onclick,
+  // },
 ];
 
 export default navbarItems;
