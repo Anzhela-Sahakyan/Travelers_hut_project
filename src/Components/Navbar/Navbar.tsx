@@ -18,7 +18,7 @@ export default function Navbar() {
       <div className={styles.navbar_logo}>
         <img src={images.logo} alt="logo" />
       </div>
-      <ul className={`${styles.navbar_links} p__opensans`}>{navbar}</ul>
+      <ul className={`${styles.navbar_links} p__opensans`}>{navbar} </ul>
 
       <div className={styles.navbar_smallscreen}>
         <MenuIcon

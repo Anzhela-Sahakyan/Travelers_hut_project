@@ -1,0 +1,16 @@
+.orderOnline {
+    list-style: none;
+    margin: 3rem;
+    cursor: pointer;
+    color: var(--color-golden);
+    font-size: 2rem;
+    text-align: center;
+    font-family: var(--font-base);
+    
+}
+
+.orderOnline:hover {
+    color: var(--color-white);
+    
+}
+

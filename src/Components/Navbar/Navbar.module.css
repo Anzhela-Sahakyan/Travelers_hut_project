@@ -26,10 +26,12 @@
   list-style: none;
 }
 
+
 .navbar_links li {
   margin: 0 1rem;
-  cursor: pointer;
 }
+
+
 
 .navbar_links li:hover {
   color: var(--color-grey);
@@ -94,6 +96,7 @@
 .navbar_links li:last-child {
   color: var(--color-golden);
   font-weight: 700;
+ 
 }
 
 .navbar_links li:last-child:hover {

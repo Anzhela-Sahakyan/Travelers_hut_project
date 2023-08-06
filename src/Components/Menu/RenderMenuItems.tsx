@@ -24,7 +24,7 @@ export default function RenderMenuItems({ type }: { type: MenuCategory }) {
         return [];
     }
   };
-
+ 
   const menuItems = getMenuItems();
 
   return (
