@@ -21,9 +21,11 @@ export default function Home() {
           whimsy. Let's savor the moments together, one delectable dish at a
           time.
         </p>
+        <a href="#Menu">
         <button type="button" className="custom__button">
           Explore Menu
         </button>
+        </a>
       </div>
       <div className="app__wrapper_img">
         <img
