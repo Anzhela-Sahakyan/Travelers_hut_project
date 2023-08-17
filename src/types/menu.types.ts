@@ -4,5 +4,4 @@ export enum MenuCategory {
   Pizza,
   Pasta,
   Sweets,
-  Beverages,
 }

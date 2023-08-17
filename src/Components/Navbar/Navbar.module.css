@@ -26,12 +26,9 @@
   list-style: none;
 }
 
-
 .navbar_links li {
   margin: 0 1rem;
 }
-
-
 
 .navbar_links li:hover {
   color: var(--color-grey);
@@ -93,21 +90,13 @@
   height: 20px;
 }
 
-.navbar_links li:last-child {
-  color: var(--color-golden);
-  font-weight: 700;
- 
-}
-
-.navbar_links li:last-child:hover {
-  color: var(--color-white);
-}
-
 @media screen and (max-width: 1150px) {
   .navbar_links {
     display: none;
   }
-
+  .orderOnlineBtn {
+    display: none;
+  }
   .navbar_smallscreen {
     display: flex;
   }

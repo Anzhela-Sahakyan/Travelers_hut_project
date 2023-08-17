@@ -4,8 +4,9 @@ import images from "../../Data/images.js";
 import MenuIcon from "@mui/icons-material/Menu";
 import RestaurantMenuTwoToneIcon from "@mui/icons-material/RestaurantMenuTwoTone";
 import { useState } from "react";
-import useEscapeKey from "../../helpers/useEscapeKey";
+import useEscapeKey from "../../hooks/useEscapeKey";
 import RenderNavbarItems from "./RenderNavbarItems";
+import OrderOnline from "./OrderOnline/OrderOnline";
 
 export default function Navbar() {
   const [toggleMenu, setToggleMenu] = useState(false);
@@ -18,8 +19,10 @@ export default function Navbar() {
       <div className={styles.navbar_logo}>
         <img src={images.logo} alt="logo" />
       </div>
-      <ul className={`${styles.navbar_links} p__opensans`}>{navbar} </ul>
-
+      <ul className={`${styles.navbar_links} p__opensans`}>{navbar}</ul>
+      <div className={styles.orderOnlineBtn}>
+        <OrderOnline />
+      </div>
       <div className={styles.navbar_smallscreen}>
         <MenuIcon
           className={styles.navbar_smallscreen_menu_icon}
@@ -37,6 +40,9 @@ export default function Navbar() {
             <ul className={`${styles.navbar_smallscreen_links} p__opensans`}>
               {navbar}
             </ul>
+            <div>
+              <OrderOnline />
+            </div>
           </div>
         )}
       </div>

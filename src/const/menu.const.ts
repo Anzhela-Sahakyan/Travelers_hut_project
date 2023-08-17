@@ -6,5 +6,4 @@ export const MENU_BUTTONS: Record<MenuCategory, string> = {
   [MenuCategory.Pizza]: "Pizza",
   [MenuCategory.Pasta]: "Pasta",
   [MenuCategory.Sweets]: "Sweets",
-  [MenuCategory.Beverages]: "Beverages",
 } as const;

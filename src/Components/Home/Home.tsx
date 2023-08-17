@@ -2,8 +2,10 @@ import "../../../src/App.css";
 import Subheading from "../Subheading/Subheading";
 import styles from "./Home.module.css";
 import images from "../../Data/images";
+import { useState } from "react";
 
 export default function Home() {
+  const [showImage, setShowImage] = useState(false);
   return (
     <div
       className={`${styles.home_header} app__wrapper section__padding`}
@@ -22,16 +24,22 @@ export default function Home() {
           time.
         </p>
         <a href="#Menu">
-        <button type="button" className="custom__button">
-          Explore Menu
-        </button>
+          <button type="button" className="custom__button">
+            Explore Menu
+          </button>
         </a>
       </div>
-      <div className="app__wrapper_img">
+      <div
+        className="app__wrapper_img"
+        style={{
+          visibility: showImage ? "visible" : "hidden",
+        }}
+      >
         <img
           className={styles.home_burger_img}
           src={images.burger}
           alt="burger img"
+          onLoad={() => setShowImage(true)}
         />
       </div>
     </div>

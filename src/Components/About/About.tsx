@@ -18,12 +18,8 @@ export default function About() {
             salads, corn, and delightful lunchboxes. Indulge your sweet tooth
             with our delectable desserts while savoring the taste of our unique
             coffees and teas, making every visit a memorable and satisfying
-            experience. Join us and embark on a gastronomic adventure like no
-            other!
+            experience.
           </p>
-          <button type="button" className="custom__button">
-            Know More
-          </button>
         </div>
 
         <div className={`${styles.about_content_utensils} flex__center`}>
@@ -41,9 +37,6 @@ export default function About() {
             Join us on our storied journey and savor the flavors of our
             extraordinary heritage.
           </p>
-          <button type="button" className="custom__button">
-            Know More
-          </button>
         </div>
       </div>
     </div>
