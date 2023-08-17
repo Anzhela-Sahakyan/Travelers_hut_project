@@ -5,6 +5,7 @@ import { createPortal } from "react-dom";
 import styles from "./Modal.module.css";
 import "../../App.css";
 import { useScrollbar } from "../../hooks/useScrollbar";
+import useEscapeKey from "../../hooks/useEscapeKey";
 
 interface ModalProps {
   title: string;
@@ -21,6 +22,8 @@ const Modal: React.FC<ModalProps> = ({ title, children, open, onClose }) => {
   };
 
   const { enableScroll, disableScroll } = useScrollbar();
+
+  useEscapeKey(onClose);
 
   useEffect(() => {
     if (open) {
