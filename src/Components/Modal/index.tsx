@@ -35,7 +35,7 @@ const Modal: React.FC<ModalProps> = ({ title, children, open, onClose }) => {
     return () => {
       enableScroll();
     };
-  }, [open]);
+  }, [open, enableScroll, disableScroll]);
 
   if (!open) {
     return null;

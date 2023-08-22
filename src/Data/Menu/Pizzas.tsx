@@ -1,4 +1,4 @@
-export default [
+const pizzas = [
   {
     name: "Margherita Pizza",
     price: "1000 AMD",
@@ -98,3 +98,5 @@ export default [
     ],
   },
 ];
+
+export default pizzas;

@@ -5,7 +5,7 @@ import images from "../../Data/images";
 import styles from "./Footer.module.css";
 import "../../../src/App.css";
 
-export default function () {
+export default function Footer() {
   return (
     <div className={styles.footer} id="Contact">
       <div className={styles.footer_links}>

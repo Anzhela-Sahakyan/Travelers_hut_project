@@ -12,7 +12,7 @@ import table from "../assets/gallery_pics/table.jpg";
 import tomato_dish from "../assets/gallery_pics/tomato_dish.jpg";
 import two_burgers from "../assets/gallery_pics/two_burgers.jpg";
 
-export default [
+const galleryImages = [
   pizza,
   burger_gallery,
   salad,
@@ -27,3 +27,5 @@ export default [
   tomato_dish,
   croissant_coffee,
 ];
+
+export default galleryImages;

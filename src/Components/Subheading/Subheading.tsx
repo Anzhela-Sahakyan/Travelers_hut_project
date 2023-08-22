@@ -9,7 +9,6 @@ export default function Subheading({ title }: SubheadingProps) {
   return (
     <div className={styles.subheading_wrapper}>
       <p className="p__cormorant">{title}</p>
-      <img></img>
     </div>
   );
 }

@@ -1,4 +1,4 @@
-export default [
+const pastas = [
   {
     name: "Spaghetti Carbonara",
     price: "1100 AMD",
@@ -33,3 +33,4 @@ export default [
     ],
   },
 ];
+export default pastas;
