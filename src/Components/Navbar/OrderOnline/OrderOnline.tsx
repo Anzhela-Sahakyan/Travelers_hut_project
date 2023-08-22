@@ -19,7 +19,7 @@ export default function OrderOnline() {
       <Modal title="Order Online" onClose={close} open={isOpen}>
         Explore our menu and get your cravings delivered right to you! Enjoy our
         tasty treats brought to your door. It's only 500 AMD for delivery, and
-        if you're all set to order, give us a ring at 033 456 321. Yum awaits!"
+        if you're all set to order, give us a ring at 033 456 321. Yum awaits!
       </Modal>
     </div>
   );
